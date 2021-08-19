@@ -36,7 +36,7 @@
   ],
   "devDependencies": {
     "cssnano": "^5.0.6",
-    "minista": "^0.8.2",
+    "minista": "^0.9.5",
     "postcss": "^8.3.5",
     "postcss-banner": "^4.0.1",
     "postcss-cli": "^8.3.1",
