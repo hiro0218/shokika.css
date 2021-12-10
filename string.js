@@ -1,4 +1,4 @@
-const cssString = `/*! shokika.css v1.5.0 | MIT License | github.com/hiro0218/shokika.css/ */
+const cssString = `/*! shokika.css v1.5.1 | MIT License | github.com/hiro0218/shokika.css/ */
 *,
 *::before,
 *::after {
