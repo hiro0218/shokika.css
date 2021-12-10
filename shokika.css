@@ -6,6 +6,7 @@
 }
 
 html {
+  height: 100%;
   font-family: sans-serif;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
@@ -17,7 +18,7 @@ html:focus-within {
 }
 
 body {
-  min-height: 100vh;
+  height: 100%;
   text-rendering: optimizeSpeed;
 }
 
@@ -33,6 +34,8 @@ figure,
 blockquote,
 dl,
 dd,
+ol,
+ul,
 button,
 input,
 select {
