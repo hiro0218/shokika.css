@@ -43,7 +43,7 @@
   "devDependencies": {
     "cssnano": "^5.0.12",
     "microbundle": "^0.14.2",
-    "minista": "^0.10.2",
+    "minista": "^1.2.0",
     "postcss": "^8.4.4",
     "postcss-banner": "^4.0.1",
     "postcss-cli": "^9.0.2",
