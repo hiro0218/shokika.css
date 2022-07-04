@@ -14,7 +14,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:creator" content="@hiro0218" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/shokika.css/assets/bundle.css">
   </head>
@@ -27,7 +27,7 @@
           <a href="#example" class="header-guide__button">Get started</a>
         </div>
         <div class="header-guide__item">
-          <a href="https://github.com/hiro0218/shokika.css" class="header-guide__button--github" target="_blank">GitHub</a>
+          <a href="https://github.com/hiro0218/shokika.css" class="header-guide__button--github" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
     </header>
@@ -277,30 +277,30 @@
               <div class="playground__item">
                 <div class="content-list">
                   <div class="content-list__item">
-                    <input type="file" />
+                    <input type="file" aria-label="input type[file] sample" />
                   </div>
                   <div class="content-list__item">
-                    <input type="file" disabled="" />
-                  </div>
-                </div>
-              </div>
-              <div class="playground__item">
-                <div class="content-list">
-                  <div class="content-list__item">
-                    <input type="color" />
-                  </div>
-                  <div class="content-list__item">
-                    <input type="color" disabled="" />
+                    <input type="file" aria-label="input type[file] sample" disabled="" />
                   </div>
                 </div>
               </div>
               <div class="playground__item">
                 <div class="content-list">
                   <div class="content-list__item">
-                    <input type="range" />
+                    <input type="color" aria-label="input type[color] sample" />
                   </div>
                   <div class="content-list__item">
-                    <input type="range" disabled="" />
+                    <input type="color" aria-label="input type[color] sample" disabled="" />
+                  </div>
+                </div>
+              </div>
+              <div class="playground__item">
+                <div class="content-list">
+                  <div class="content-list__item">
+                    <input type="range" aria-label="input type[range] sample" />
+                  </div>
+                  <div class="content-list__item">
+                    <input type="range" aria-label="input type[range] sample" disabled="" />
                   </div>
                 </div>
               </div>
@@ -361,32 +361,14 @@
               <div class="playground__item">
                 <div class="content-list">
                   <div class="content-list__item">
-                    <select>
+                    <select aria-label="select sample">
                       <option>One fuji</option>
                       <option>Two eagles</option>
                       <option>Three eggplants</option>
                     </select>
                   </div>
                   <div class="content-list__item">
-                    <select disabled="">
-                      <option>One fuji</option>
-                      <option>Two eagles</option>
-                      <option>Three eggplants</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="playground__item">
-                <div class="content-list">
-                  <div class="content-list__item">
-                    <select multiple="">
-                      <option>One fuji</option>
-                      <option>Two eagles</option>
-                      <option>Three eggplants</option>
-                    </select>
-                  </div>
-                  <div class="content-list__item">
-                    <select multiple="" disabled="">
+                    <select aria-label="select sample" disabled="">
                       <option>One fuji</option>
                       <option>Two eagles</option>
                       <option>Three eggplants</option>
@@ -397,7 +379,25 @@
               <div class="playground__item">
                 <div class="content-list">
                   <div class="content-list__item">
-                    <select>
+                    <select aria-label="select sample" multiple="">
+                      <option>One fuji</option>
+                      <option>Two eagles</option>
+                      <option>Three eggplants</option>
+                    </select>
+                  </div>
+                  <div class="content-list__item">
+                    <select aria-label="select sample" multiple="" disabled="">
+                      <option>One fuji</option>
+                      <option>Two eagles</option>
+                      <option>Three eggplants</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="playground__item">
+                <div class="content-list">
+                  <div class="content-list__item">
+                    <select aria-label="select sample">
                       <optgroup label="1st group">
                         <option>One fuji</option>
                         <option>Two eagles</option>
@@ -411,7 +411,7 @@
                     </select>
                   </div>
                   <div class="content-list__item">
-                    <select disabled="">
+                    <select aria-label="select sample" disabled="">
                       <optgroup label="1st group">
                         <option>One fuji</option>
                         <option>Two eagles</option>
@@ -429,7 +429,7 @@
               <div class="playground__item">
                 <div class="content-list">
                   <div class="content-list__item">
-                    <select multiple="">
+                    <select aria-label="select sample" multiple="">
                       <optgroup label="1st group">
                         <option>One fuji</option>
                         <option>Two eagles</option>
@@ -443,7 +443,7 @@
                     </select>
                   </div>
                   <div class="content-list__item">
-                    <select multiple="" disabled="">
+                    <select aria-label="select sample" aria-disabled="true" multiple="" disabled="">
                       <optgroup label="1st group">
                         <option>One fuji</option>
                         <option>Two eagles</option>
@@ -526,7 +526,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">created by <a href="https://github.com/hiro0218" target="_blank">hiro</a>
+    <footer class="footer">created by <a href="https://github.com/hiro0218" target="_blank" rel="noreferrer">hiro</a>
     </footer>
   </body>
 </html>
