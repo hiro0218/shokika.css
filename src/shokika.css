@@ -171,20 +171,3 @@ summary {
 [disabled] {
   cursor: not-allowed;
 }
-
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    transition-duration: 0s !important;
-    transition-delay: 0s !important;
-    animation-duration: 0s !important;
-    animation-delay: 0s !important;
-    animation-iteration-count: 1 !important;
-    scroll-behavior: auto !important;
-  }
-}
