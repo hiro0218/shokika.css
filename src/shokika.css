@@ -51,11 +51,6 @@
   height: auto;
 }
 
-:where(svg) {
-  stroke: none;
-  fill: currentColor;
-}
-
 :where(input, button, textarea, select) {
   font: inherit;
   line-height: 1.5;
