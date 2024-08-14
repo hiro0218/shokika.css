@@ -1,5 +1,3 @@
-import React from 'react';
-
 import LayoutContent from './LayoutContent';
 import Text from './Text';
 import Inline from './Inline';
