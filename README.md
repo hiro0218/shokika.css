@@ -13,12 +13,12 @@ note: shokika means "initialize" in Japanese.
 You can install shokika.css using npm, Yarn, or a CDN.
 
 **npm**
-```
-npm install --save-dev shokika.css
+```bash
+npm install shokika.css
 ```
 
 **Yarn**
-```
+```bash
 yarn add shokika.css
 ```
 
@@ -35,6 +35,14 @@ You can use shokika.css by importing it into your project.
 
 ```scss
 @import '~shokika.css';
+```
+
+If you want to consider the loading order and specificity, use the [Cascade layers](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Cascade_layers) to load it.
+
+```css
+@layer reset, tools, base, components, utilities;
+
+@import 'shokika.css' layer(reset);
 ```
 
 **HTML**
