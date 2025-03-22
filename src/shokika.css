@@ -109,7 +109,7 @@
   outline-offset: -2px;
 }
 
-:where([type='search']::-webkit-search-decoration) {
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
