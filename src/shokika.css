@@ -1,8 +1,10 @@
-:where(*, *::before, *::after) {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-:where(html) {
+html {
   height: 100%;
   font-family: sans-serif;
   line-height: 1.5;
@@ -10,101 +12,136 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-:where(html:focus-within) {
+html:focus-within {
   scroll-behavior: smooth;
 }
 
-:where(body) {
+body {
   height: 100%;
   text-rendering: optimizeSpeed;
 }
 
-:where(body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ol, ul, button, input, select) {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ol,
+ul,
+button,
+input,
+select {
   margin: 0;
 }
 
-:where(h1, h2, h3, h4, h5, h6) {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 100%;
   font-weight: normal;
 }
 
-:where(b, strong) {
+b,
+strong {
   font-weight: bolder;
 }
 
-:where(small) {
+small {
   font-size: 80%;
 }
 
-:where(ol, ul) {
+ol,
+ul {
   padding: 0;
   list-style: none;
 }
 
-:where(pre, code, kbd, samp) {
+pre,
+code,
+kbd,
+samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
 
-:where(img, video, picture) {
+img,
+video,
+picture {
   max-width: 100%;
   height: auto;
 }
 
-:where(svg) {
+svg {
   stroke: none;
   fill: currentColor;
 }
 
-:where(input, button, textarea, select) {
+input,
+button,
+textarea,
+select {
   font: inherit;
   line-height: 1.5;
 }
 
-:where(input[type='file'])::-webkit-file-upload-button,
-:where(input[type='file'])::file-selector-button {
+input[type='file']::-webkit-file-upload-button,
+input[type='file']::file-selector-button {
   cursor: pointer;
 }
 
-:where(iframe) {
+iframe {
   border: 0;
 }
 
-:where(table) {
+table {
   border-spacing: 0;
   border-collapse: collapse;
 }
 
-:where(td, th) {
+td,
+th {
   padding: 0;
 }
 
-:where(dt) {
+dt {
   font-weight: bold;
 }
 
-:where(hr) {
+hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
 
-:where(option) {
+option {
   padding: 0;
 }
 
-:where(button, [type='button'], [type='reset'], [type='submit']) {
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
-:where(abbr[title]) {
+abbr[title] {
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
   text-decoration-skip-ink: none;
 }
 
-:where([type='search']) {
+[type='search'] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
@@ -113,33 +150,39 @@
   -webkit-appearance: none;
 }
 
-:where(
-    [tabindex]:not([tabindex*='-']),
-    a[href],
-    button,
-    [type='button'],
-    [type='reset'],
-    [type='submit'],
-    [role='button'],
-    label,
-    select,
-    summary
-  ) {
+[tabindex]:not([tabindex*='-']),
+a[href],
+button,
+[type='button'],
+[type='reset'],
+[type='submit'],
+[role='button'],
+label,
+select,
+summary {
   cursor: pointer;
 }
 
-:where([tabindex]:not([tabindex*='-']), a[href], button, input, label, select, textarea, summary) {
+[tabindex]:not([tabindex*='-']),
+a[href],
+button,
+input,
+label,
+select,
+textarea,
+summary {
   touch-action: manipulation;
 }
 
-:where([aria-busy='true' i]) {
+[aria-busy='true' i] {
   cursor: progress;
 }
 
-:where([aria-controls]) {
+[aria-controls] {
   cursor: pointer;
 }
 
-:where([aria-disabled='true' i], [disabled]) {
+[aria-disabled='true' i],
+[disabled] {
   cursor: not-allowed;
 }
