@@ -9,7 +9,7 @@ module.exports = (ctx) => ({
     },
     "postcss-lightningcss": {
       lightningcssOptions: {
-        minify: true,
+        minify: ctx.env === "production",
         sourceMap: true,
         cssModules: false,
         drafts: {
