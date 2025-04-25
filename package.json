@@ -17,8 +17,8 @@
     "postbuild:css": "node ./lib/toString.js && npm run build:bundle",
     "lint": "eslint .",
     "preview": "vite preview",
-    "clean": "rimraf dist/*.css dist/*.js",
-    "prepare": "mkdir dist &&npm run clean && npm run build:css && npm run build:css:min && husky"
+    "clean": "rimraf dist && mkdir dist",
+    "prepare": "npm run clean && npm run build:css && npm run build:css:min && husky"
   },
   "repository": {
     "type": "git",
@@ -46,8 +46,8 @@
   ],
   "devDependencies": {
     "@eslint/js": "^9.9.0",
-    "@types/react": "^19.0.12",
-    "@types/react-dom": "^18.3.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react-swc": "^3.9.0",
     "eslint": "^9.9.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
@@ -56,9 +56,9 @@
     "husky": "^9.1.4",
     "lint-staged": "^15.2.9",
     "microbundle": "^0.15.1",
-    "postcss": "^8.4.41",
+    "postcss": "^8.5.3",
     "postcss-banner": "^4.0.1",
-    "postcss-cli": "^11.0.0",
+    "postcss-cli": "^11.0.1",
     "postcss-lightningcss": "^1.0.1",
     "prettier": "^3.3.3",
     "react": "^19.1.0",
