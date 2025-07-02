@@ -1,26 +1,50 @@
+/**
+ * Switch to a more intuitive box model for all elements.
+ */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/**
+ * Establish base document styles for consistent behavior and appearance.
+ * 1. Enable percentage-based height layouts.
+ * 2. Set a standard sans-serif font to avoid browser defaults.
+ * 3. Improve readability with a comfortable line height.
+ * 4. Prevent unwanted font scaling on mobile orientation changes.
+ * 5. Remove tap highlight on iOS for a more native feel.
+ */
 html {
-  height: 100%;
-  font-family: sans-serif;
-  line-height: 1.5;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  height: 100%; /* 1 */
+  font-family: sans-serif; /* 2 */
+  line-height: 1.5; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 4 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* 5 */
 }
 
+/**
+ * Improve user experience with smooth scrolling when navigating.
+ */
 html:focus-within {
   scroll-behavior: smooth;
 }
 
+/**
+ * Configure the body for full-height layouts and optimized text rendering.
+ * 1. Allow percentage-based heights for child elements.
+ * 2. Remove inconsistent default browser margins.
+ * 3. Hint the browser to prioritize rendering speed for text.
+ */
 body {
-  height: 100%;
-  text-rendering: optimizeSpeed;
+  height: 100%; /* 1 */
+  margin: 0; /* 2 */
+  text-rendering: optimizeSpeed; /* 3 */
 }
 
+/**
+ * Remove default margins for consistent spacing control.
+ */
 body,
 h1,
 h2,
@@ -41,92 +65,157 @@ select {
   margin: 0;
 }
 
+/**
+ * Reset heading styles for easier and more consistent custom styling.
+ * 1. Normalize font size to inherit from the parent.
+ * 2. Reset font weight to be non-bold by default.
+ */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-size: 100%;
-  font-weight: normal;
+  font-size: 100%; /* 1 */
+  font-weight: normal; /* 2 */
 }
 
+/**
+ * Ensure `b` and `strong` elements are displayed with a bold font weight.
+ */
 b,
 strong {
   font-weight: bolder;
 }
 
+/**
+ * Define a consistent, smaller font size for the `small` element.
+ */
 small {
   font-size: 80%;
 }
 
+/**
+ * Reset lists to a neutral state.
+ * 1. Remove default indentation.
+ * 2. Remove list markers (bullets/numbers).
+ */
 ol,
 ul {
-  padding: 0;
-  list-style: none;
+  padding: 0; /* 1 */
+  list-style: none; /* 2 */
 }
 
+/**
+ * Standardize the appearance of code-related elements.
+ * 1. Use a monospace font for clear, fixed-width characters.
+ * 2. Normalize font size to prevent browser inconsistencies.
+ */
 pre,
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
+/**
+ * Ensure embedded media scales responsively within its container.
+ * 1. Prevent media from overflowing its container.
+ * 2. Maintain the aspect ratio of the media.
+ */
 img,
 video,
 picture {
-  max-width: 100%;
-  height: auto;
+  max-width: 100%; /* 1 */
+  height: auto; /* 2 */
 }
 
+/**
+ * Configure SVGs for easy styling via CSS.
+ * 1. Remove any default stroke.
+ * 2. Allow the fill color to be set by the CSS `color` property.
+ */
 svg {
-  stroke: none;
-  fill: currentColor;
+  stroke: none; /* 1 */
+  fill: currentColor; /* 2 */
 }
 
+/**
+ * Allow form elements to inherit typographic styles for consistency.
+ * 1. Inherit all font properties from the parent element.
+ * 2. Set a consistent line height.
+ */
 input,
 button,
 textarea,
 select {
-  font: inherit;
-  line-height: 1.5;
+  font: inherit; /* 1 */
+  line-height: 1.5; /* 2 */
 }
 
+/**
+ * Improve usability by indicating the file upload button is clickable.
+ */
 input[type='file']::-webkit-file-upload-button,
 input[type='file']::file-selector-button {
   cursor: pointer;
 }
 
+/**
+ * Remove default iframe borders for cleaner embedding.
+ */
 iframe {
   border: 0;
 }
 
+/**
+ * Reset table styles for consistent border and spacing behavior.
+ * 1. Remove the space between table cells.
+ * 2. Merge adjacent cell borders into a single border.
+ */
 table {
-  border-spacing: 0;
-  border-collapse: collapse;
+  border-spacing: 0; /* 1 */
+  border-collapse: collapse; /* 2 */
 }
 
+/**
+ * Remove default cell padding for custom table styling.
+ */
 td,
 th {
   padding: 0;
 }
 
+/**
+ * Provide a default visual distinction for definition terms.
+ */
 dt {
   font-weight: bold;
 }
 
+/**
+ * Correct browser inconsistencies in the rendering of horizontal rules.
+ * 1. Use `content-box` for predictable sizing.
+ * 2. Remove default height.
+ * 3. Ensure the rule is visible even if it has no content.
+ */
 hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 2 */
+  overflow: visible; /* 3 */
 }
 
+/**
+ * Reset padding on `option` elements for consistent appearance.
+ */
 option {
   padding: 0;
 }
 
+/**
+ * Address styling limitations for button elements in WebKit browsers.
+ */
 button,
 [type='button'],
 [type='reset'],
@@ -134,22 +223,39 @@ button,
   -webkit-appearance: button;
 }
 
+/**
+ * Improve accessibility and visibility for abbreviations with a `title` attribute.
+ * 1. Add a dotted underline to signal that more information is available.
+ * 2. Use the 'help' cursor to indicate a tooltip on hover.
+ * 3. Prevent the underline from being interrupted by descenders.
+ */
 abbr[title] {
-  -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
-  cursor: help;
-  text-decoration-skip-ink: none;
+  -webkit-text-decoration: underline dotted; /* 1 */
+  text-decoration: underline dotted; /* 1 */
+  cursor: help; /* 2 */
+  text-decoration-skip-ink: none; /* 3 */
 }
 
+/**
+ * Normalize the styling of search input fields in WebKit browsers.
+ * 1. Remove the default rounded appearance in Safari.
+ * 2. Adjust the outline offset for better focus visibility.
+ */
 [type='search'] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
+/**
+ * Remove proprietary search input decorations in WebKit.
+ */
 [type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
+/**
+ * Provide clear visual feedback by applying a pointer cursor to all interactive elements.
+ */
 [tabindex]:not([tabindex*='-']),
 a[href],
 button,
@@ -163,6 +269,9 @@ summary {
   cursor: pointer;
 }
 
+/**
+ * Improve mobile user experience by disabling double-tap to zoom on interactive elements.
+ */
 [tabindex]:not([tabindex*='-']),
 a[href],
 button,
@@ -174,14 +283,23 @@ summary {
   touch-action: manipulation;
 }
 
+/**
+ * Visually communicate an element's busy state to the user.
+ */
 [aria-busy='true' i] {
   cursor: progress;
 }
 
+/**
+ * Signal interactivity for elements that control other page components.
+ */
 [aria-controls] {
   cursor: pointer;
 }
 
+/**
+ * Visually communicate that an element is non-interactive.
+ */
 [aria-disabled='true' i],
 [disabled] {
   cursor: not-allowed;
