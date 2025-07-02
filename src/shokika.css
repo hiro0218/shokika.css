@@ -33,13 +33,13 @@ html:focus-within {
 /**
  * Configure the body for full-height layouts and optimized text rendering.
  * 1. Allow percentage-based heights for child elements.
- * 2. Hint the browser to prioritize rendering speed for text.
- * 3. Remove inconsistent default browser margins.
+ * 2. Remove inconsistent default browser margins.
+ * 3. Hint the browser to prioritize rendering speed for text.
  */
 body {
   height: 100%; /* 1 */
-  margin: 0; /* 3 */
-  text-rendering: optimizeSpeed; /* 2 */
+  margin: 0; /* 2 */
+  text-rendering: optimizeSpeed; /* 3 */
 }
 
 /**
