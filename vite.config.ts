@@ -5,4 +5,6 @@ import react from '@vitejs/plugin-react-swc';
 export default defineConfig({
   plugins: [react()],
   base: '/shokika.css/',
+  root: 'docs',
+  publicDir: '../public',
 });

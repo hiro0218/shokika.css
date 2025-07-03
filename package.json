@@ -17,7 +17,7 @@
     "postbuild:css": "node ./lib/toString.js && npm run build:bundle",
     "lint": "eslint .",
     "preview": "vite preview",
-    "clean": "rimraf dist && mkdir dist",
+    "clean": "rimraf dist docs/dist && mkdir dist && mkdir docs/dist",
     "prepare": "npm run clean && npm run build:css && npm run build:css:min && husky"
   },
   "repository": {
