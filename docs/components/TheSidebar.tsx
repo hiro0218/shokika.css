@@ -1,35 +1,69 @@
+import { useCallback } from 'react';
+
 const TheSidebar = () => {
+  const handleNavClick = useCallback((event: React.MouseEvent<HTMLAnchorElement>) => {
+    const target = event.currentTarget;
+    const href = target.getAttribute('href');
+
+    if (href?.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = document.querySelector(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+        // Update URL without triggering page reload
+        history.pushState(null, '', href);
+      }
+    }
+  }, []);
+
   return (
-    <aside className="sidebar">
+    <aside className="sidebar" aria-label="Documentation navigation">
       <nav>
         <div className="sidebar__nav-group">
           <h2 className="sidebar__nav-heading">Getting Started</h2>
-          <ul className="sidebar__nav-list">
-            <li>
-              <a href="#installation">Installation</a>
+          <ul className="sidebar__nav-list" role="list">
+            <li role="listitem">
+              <a href="#installation" onClick={handleNavClick} aria-describedby="installation-desc">
+                Installation
+              </a>
             </li>
-            <li>
-              <a href="#example">Example</a>
+            <li role="listitem">
+              <a href="#example" onClick={handleNavClick} aria-describedby="example-desc">
+                Example
+              </a>
             </li>
           </ul>
         </div>
         <div className="sidebar__nav-group">
           <h2 className="sidebar__nav-heading">Elements</h2>
-          <ul className="sidebar__nav-list">
-            <li>
-              <a href="#text">Text</a>
+          <ul className="sidebar__nav-list" role="list">
+            <li role="listitem">
+              <a href="#text" onClick={handleNavClick}>
+                Text
+              </a>
             </li>
-            <li>
-              <a href="#inline">Inline</a>
+            <li role="listitem">
+              <a href="#inline" onClick={handleNavClick}>
+                Inline
+              </a>
             </li>
-            <li>
-              <a href="#form">Form</a>
+            <li role="listitem">
+              <a href="#form" onClick={handleNavClick}>
+                Form
+              </a>
             </li>
-            <li>
-              <a href="#image">Image</a>
+            <li role="listitem">
+              <a href="#image" onClick={handleNavClick}>
+                Image
+              </a>
             </li>
-            <li>
-              <a href="#other">Other</a>
+            <li role="listitem">
+              <a href="#other" onClick={handleNavClick}>
+                Other
+              </a>
             </li>
           </ul>
         </div>

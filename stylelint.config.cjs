@@ -25,5 +25,13 @@ module.exports = {
         ignoreFontFamilyNames: ["monospace"],
       },
     ],
+    "media-feature-name-value-no-unknown": [
+      true,
+      {
+        ignoreValues: {
+          "prefers-contrast": ["high", "more", "less", "no-preference"]
+        }
+      }
+    ],
   },
 };

@@ -1,22 +1,23 @@
-import { useState, useEffect } from 'react';
 import { Sun } from './Icon/Sun';
 import { Moon } from './Icon/Moon';
+import { useTheme } from '../hooks/useTheme';
+import { THEMES } from '../types/theme';
 
 const ThemeToggleButton = () => {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const { theme, toggleTheme, isInitialized } = useTheme();
 
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-  };
+  // 初期化前は何も表示しない（hydration mismatch回避）
+  if (!isInitialized) {
+    return null;
+  }
 
   return (
-    <button className="theme-toggle-button" onClick={toggleTheme} aria-label="Toggle theme">
-      {theme === 'light' ? <Sun /> : <Moon />}
+    <button
+      className="theme-toggle-button"
+      onClick={toggleTheme}
+      aria-label={`Switch to ${theme === THEMES.LIGHT ? 'dark' : 'light'} theme`}
+    >
+      {theme === THEMES.LIGHT ? <Sun /> : <Moon />}
     </button>
   );
 };

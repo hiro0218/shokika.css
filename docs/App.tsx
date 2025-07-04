@@ -1,3 +1,4 @@
+import { StrictMode } from 'react';
 import TheHeader from './components/TheHeader';
 import TheSidebar from './components/TheSidebar';
 import TheMain from './components/TheMain';
@@ -6,17 +7,19 @@ import ThemeToggleButton from './components/ThemeToggleButton';
 
 function App() {
   return (
-    <>
-      <TheHeader />
-      <div className="app-layout">
-        <TheSidebar />
-        <div className="main-wrapper">
-          <TheMain />
-          <TheFooter />
+    <StrictMode>
+      <div className="app">
+        <TheHeader />
+        <div className="app-layout">
+          <TheSidebar />
+          <div className="main-wrapper">
+            <TheMain />
+            <TheFooter />
+          </div>
         </div>
+        <ThemeToggleButton />
       </div>
-      <ThemeToggleButton />
-    </>
+    </StrictMode>
   );
 }
 
