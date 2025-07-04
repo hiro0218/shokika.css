@@ -1,9 +1,9 @@
 const Form = () => {
   return (
-    <>
-      <h1 className="content__heading">Form</h1>
+    <div className="content-wrapper">
+      <h3 className="content-heading">Form</h3>
 
-      <h2 className="content__sub-heading">Button</h2>
+      <h4 className="content-sub-heading">Button</h4>
       <div className="playground">
         <div className="playground__item">
           <div className="content-list">
@@ -53,7 +53,7 @@ const Form = () => {
         </div>
       </div>
 
-      <h2 className="content__sub-heading">Input</h2>
+      <h4 className="content-sub-heading">Input</h4>
       <div className="playground">
         <div className="playground__item">
           <div className="content-list">
@@ -191,7 +191,7 @@ const Form = () => {
         </div>
       </div>
 
-      <h2 className="content__sub-heading">Checkbox</h2>
+      <h4 className="content-sub-heading">Checkbox</h4>
       <div className="playground">
         <div className="content-list">
           <div className="content-list__item">
@@ -215,7 +215,7 @@ const Form = () => {
         </div>
       </div>
 
-      <h2 className="content__sub-heading">Radio</h2>
+      <h4 className="content-sub-heading">Radio</h4>
       <div className="playground">
         <div className="content-list">
           <div className="content-list__item">
@@ -239,7 +239,7 @@ const Form = () => {
         </div>
       </div>
 
-      <h2 className="content__sub-heading">Textarea</h2>
+      <h4 className="content-sub-heading">Textarea</h4>
       <div className="playground">
         <div className="content-list">
           <div className="content-list__item">
@@ -251,7 +251,7 @@ const Form = () => {
         </div>
       </div>
 
-      <h2 className="content__sub-heading">Select</h2>
+      <h4 className="content-sub-heading">Select</h4>
       <div className="playground">
         <div className="playground__item">
           <div className="content-list">
@@ -358,7 +358,7 @@ const Form = () => {
         </div>
       </div>
 
-      <h2 className="content__sub-heading">Fieldset and Legend</h2>
+      <h4 className="content-sub-heading">Fieldset and Legend</h4>
       <div className="playground">
         <fieldset>
           <legend>Choose your favorite monster</legend>
@@ -384,7 +384,7 @@ const Form = () => {
           </div>
         </fieldset>
       </div>
-    </>
+    </div>
   );
 };
 

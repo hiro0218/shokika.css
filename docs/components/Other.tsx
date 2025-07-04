@@ -1,9 +1,9 @@
 const Other = () => {
   return (
-    <>
-      <h1 className="content__heading">Other Elements</h1>
+    <div className="content-wrapper">
+      <h3 className="content-heading">Other Elements</h3>
 
-      <h2 className="content__sub-heading">Table</h2>
+      <h4 className="content-sub-heading">Table</h4>
       <div className="playground">
         <table>
           <thead>
@@ -20,14 +20,14 @@ const Other = () => {
         </table>
       </div>
 
-      <h2 className="content__sub-heading">Details</h2>
+      <h4 className="content-sub-heading">Details</h4>
       <div className="playground">
         <details>
           <summary>Summary</summary>
           <p>Paragraph</p>
         </details>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,8 +1,7 @@
 const Inline = () => {
   return (
-    <>
-      <h1 className="content__heading">Inline</h1>
-
+    <div className="content-wrapper">
+      <h3 className="content-heading">Inline</h3>
       <div className="playground">
         <div className="playground__item">
           This is <a href="#">Anchor Link</a>.
@@ -41,7 +40,7 @@ const Inline = () => {
           Run <code>npm install --save-dev shokika.css</code> to install.
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

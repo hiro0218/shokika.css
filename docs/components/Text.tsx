@@ -1,9 +1,9 @@
 const Text = () => {
   return (
-    <>
-      <h1 className="content__heading">Text</h1>
+    <div className="content-wrapper">
+      <h3 className="content-heading">Text</h3>
 
-      <h2 className="content__sub-heading">Headings</h2>
+      <h4 className="content-sub-heading">Headings</h4>
       <div className="playground">
         <h1>heading 1</h1>
         <h2>heading 2</h2>
@@ -13,7 +13,7 @@ const Text = () => {
         <h6>heading 6</h6>
       </div>
 
-      <h2 className="content__sub-heading">Paragraph</h2>
+      <h4 className="content-sub-heading">Paragraph</h4>
       <div className="playground">
         <p>
           The <code>&lt;p&gt;</code> HTML element represents a paragraph. Paragraphs are usually represented in visual
@@ -22,7 +22,7 @@ const Text = () => {
         </p>
       </div>
 
-      <h2 className="content__sub-heading">List</h2>
+      <h4 className="content-sub-heading">List</h4>
       <div className="playground">
         <div className="playground__item">
           <ul>
@@ -40,19 +40,19 @@ const Text = () => {
         </div>
       </div>
 
-      <h2 className="content__sub-heading">Blockquote</h2>
+      <h4 className="content-sub-heading">Blockquote</h4>
       <div className="playground">
         <blockquote>Our mission is to make cloud computing accessible to everyone.</blockquote>
       </div>
 
-      <h2 className="content__sub-heading">Preformatted Text (Code Block)</h2>
+      <h4 className="content-sub-heading">Preformatted Text (Code Block)</h4>
       <div className="playground">
         <pre>
           <code>npm install --save-dev shokika.css</code>
         </pre>
       </div>
 
-      <h2 className="content__sub-heading">Description List</h2>
+      <h4 className="content-sub-heading">Description List</h4>
       <div className="playground">
         <dl>
           <dt>Beast of Bodmin</dt>
@@ -66,13 +66,13 @@ const Text = () => {
         </dl>
       </div>
 
-      <h2 className="content__sub-heading">Horizontal Rule</h2>
+      <h4 className="content-sub-heading">Horizontal Rule</h4>
       <div className="playground">
         <p>This is the first paragraph of text.</p>
         <hr />
         <p>This is the second paragraph of text.</p>
       </div>
-    </>
+    </div>
   );
 };
 
