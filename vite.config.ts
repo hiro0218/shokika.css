@@ -7,4 +7,16 @@ export default defineConfig({
   base: '/shokika.css/',
   root: 'docs',
   publicDir: '../public',
+  build: {
+    // Enable source maps for production debugging
+    sourcemap: true,
+    // Minimize assets
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
+    },
+  },
 });
