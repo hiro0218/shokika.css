@@ -139,6 +139,24 @@ body {
   text-decoration: none;
 }
 
+.footer a {
+  color: var(--brand-1);
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.sidebar__nav-list a:hover {
+  color: var(--text-1);
+}
+
+.header__nav a {
+  &:active {
+    color: var(--brand-1);
+  }
+}
+
 /* Content */
 .section-container {
   margin-top: calc(var(--spacing-unit) * 8);
@@ -250,20 +268,8 @@ html[data-theme='dark'] .playground {
   text-align: center;
 }
 
-.footer a {
-  color: var(--brand-1);
-  text-decoration: none;
-}
-.footer a:hover {
-  text-decoration: underline;
-}
-
 .theme-toggle-button:hover {
   background-color: var(--bg-alt);
-}
-
-.sidebar__nav-list a:hover {
-  color: var(--text-1);
 }
 
 /* Responsive */

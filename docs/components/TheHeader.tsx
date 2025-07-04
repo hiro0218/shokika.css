@@ -1,3 +1,5 @@
+import { GitHub } from './Icon/GitHub';
+
 const TheHeader = () => {
   return (
     <header className="header">
@@ -6,7 +8,7 @@ const TheHeader = () => {
       </h1>
       <nav className="header__nav">
         <a href="https://github.com/hiro0218/shokika.css" target="_blank" rel="noreferrer">
-          GitHub
+          <GitHub />
         </a>
       </nav>
     </header>
