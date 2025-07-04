@@ -1,6 +1,7 @@
 import TheHeader from './components/TheHeader';
 import TheMain from './components/TheMain';
 import TheFooter from './components/TheFooter';
+import ThemeToggleButton from './components/ThemeToggleButton';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <TheHeader />
       <TheMain />
       <TheFooter />
+      <ThemeToggleButton />
     </>
   );
 }
