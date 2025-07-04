@@ -115,7 +115,7 @@ body {
   margin-top: var(--spacing-unit);
 }
 
-.sidebar__nav-group:first-child .sidebar__nav-heading {
+.sidebar__nav-group .sidebar__nav-heading {
   margin-top: 0;
   color: var(--text-3);
   font-size: 1rem;
@@ -125,7 +125,7 @@ body {
 }
 
 .sidebar__nav-list {
-  margin: 0;
+  margin-top: var(--spacing-unit);
   padding: 0;
   list-style: none;
 }
