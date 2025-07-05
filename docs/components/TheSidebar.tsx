@@ -24,14 +24,14 @@ const TheSidebar = () => {
       <nav>
         <div className="sidebar__nav-group">
           <h2 className="sidebar__nav-heading">Installation</h2>
-          <ul className="sidebar__nav-list" role="list">
-            <li role="listitem">
-              <a href="#npm" onClick={handleNavClick} aria-describedby="npm-desc">
+          <ul className="sidebar__nav-list">
+            <li>
+              <a href="#npm" onClick={handleNavClick}>
                 npm
               </a>
             </li>
-            <li role="listitem">
-              <a href="#cdn" onClick={handleNavClick} aria-describedby="cdn-desc">
+            <li>
+              <a href="#cdn" onClick={handleNavClick}>
                 cdn
               </a>
             </li>
@@ -39,28 +39,28 @@ const TheSidebar = () => {
         </div>
         <div className="sidebar__nav-group">
           <h2 className="sidebar__nav-heading">Example</h2>
-          <ul className="sidebar__nav-list" role="list">
-            <li role="listitem">
+          <ul className="sidebar__nav-list">
+            <li>
               <a href="#text" onClick={handleNavClick}>
                 Text
               </a>
             </li>
-            <li role="listitem">
+            <li>
               <a href="#inline" onClick={handleNavClick}>
                 Inline
               </a>
             </li>
-            <li role="listitem">
+            <li>
               <a href="#form" onClick={handleNavClick}>
                 Form
               </a>
             </li>
-            <li role="listitem">
+            <li>
               <a href="#image" onClick={handleNavClick}>
                 Image
               </a>
             </li>
-            <li role="listitem">
+            <li>
               <a href="#other" onClick={handleNavClick}>
                 Other
               </a>
