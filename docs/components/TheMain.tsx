@@ -9,15 +9,15 @@ const TheMain = () => {
   return (
     <main className="main-content">
       <section id="installation" className="section-container">
-        <h2 className="section-heading">Installation</h2>
+        <Heading title="Installation" level={2} id="installation" />
         <div className="content-wrapper">
-          <Heading title="npm" id="npm" />
+          <Heading title="npm" id="npm" level={3} />
           <pre className="install-content__preformatted">
             <code>npm install --save-dev shokika.css</code>
           </pre>
         </div>
         <div className="content-wrapper">
-          <Heading title="CDN" id="cdn" />
+          <Heading title="CDN" id="cdn" level={3} />
           <pre className="install-content__preformatted">
             <code>https://unpkg.com/shokika.css@latest/dist/shokika.min.css</code>
           </pre>
@@ -25,7 +25,7 @@ const TheMain = () => {
       </section>
 
       <section id="example" className="section-container">
-        <h2 className="section-heading">Example</h2>
+        <Heading title="Example" level={2} id="example" />
         <div id="text">
           <Text />
         </div>

@@ -3,7 +3,7 @@ import Heading from './ui/Heading';
 const Image = () => {
   return (
     <div className="content-wrapper">
-      <Heading title="Image" id="image" />
+      <Heading title="Image" id="image" level={3} />
 
       <h4 className="content-sub-heading">Basic</h4>
       <div className="playground">

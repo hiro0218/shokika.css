@@ -3,13 +3,17 @@ import React from 'react';
 interface HeadingProps {
   title: string;
   id?: string;
+  level?: 1 | 2 | 3 | 4 | 5 | 6;
 }
 
-const Heading: React.FC<HeadingProps> = ({ title, id }) => {
+const Heading: React.FC<HeadingProps> = ({ title, id, level = 3 }) => {
+  const Tag: React.ElementType = `h${level}`;
+  const className = level === 2 ? 'section-heading' : 'content-heading';
+
   return (
-    <h3 className="content-heading" id={id}>
+    <Tag className={className} id={id}>
       {title}
-    </h3>
+    </Tag>
   );
 };
 
