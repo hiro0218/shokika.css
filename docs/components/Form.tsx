@@ -386,6 +386,80 @@ const Form = () => {
           </div>
         </fieldset>
       </div>
+
+      <h4 className="content-sub-heading">Datalist</h4>
+      <div className="playground">
+        <div className="content-list">
+          <div className="content-list__item">
+            <label htmlFor="ice-cream-choice">Choose a flavor:</label>
+            <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+            <datalist id="ice-cream-flavors">
+              <option value="Chocolate" />
+              <option value="Coconut" />
+              <option value="Mint" />
+              <option value="Strawberry" />
+              <option value="Vanilla" />
+            </datalist>
+          </div>
+        </div>
+      </div>
+
+      <h4 className="content-sub-heading">Progress</h4>
+      <div className="playground">
+        <div className="content-list">
+          <div className="content-list__item">
+            <label htmlFor="file">File progress:</label>
+            <progress id="file" max="100" value="70">
+              70%
+            </progress>
+          </div>
+        </div>
+      </div>
+
+      <h4 className="content-sub-heading">Meter</h4>
+      <div className="playground">
+        <div className="content-list">
+          <div className="content-list__item">
+            <label htmlFor="fuel">Fuel level:</label>
+            <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">
+              at 50/100
+            </meter>
+          </div>
+        </div>
+      </div>
+
+      <h4 className="content-sub-heading">Output</h4>
+      <div className="playground">
+        <form
+          onInput={(e) => {
+            const target = e.target as HTMLInputElement;
+            const form = target.form as HTMLFormElement | null;
+            const output = form?.querySelector('output') as HTMLOutputElement | null;
+            if (form && output) {
+              const a = form.elements.namedItem('a') as HTMLInputElement | null;
+              const b = form.elements.namedItem('b') as HTMLInputElement | null;
+              if (a && b) {
+                output.value = `Result: ${parseInt(a.value) + parseInt(b.value)}`;
+              }
+            }
+          }}
+        >
+          <div className="content-list">
+            <div className="content-list__item">
+              <input type="number" name="a" defaultValue="10" />
+            </div>
+            <div className="content-list__item">
+              <span>+</span>
+            </div>
+            <div className="content-list__item">
+              <input type="number" name="b" defaultValue="10" />
+            </div>
+            <div className="content-list__item">
+              <output name="result">Result: 20</output>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
