@@ -1,7 +1,7 @@
-import { Sun } from './Icon/Sun';
-import { Moon } from './Icon/Moon';
-import { useTheme } from '../hooks/useTheme';
-import { THEMES } from '../types/theme';
+import { Sun } from '../Icon/Sun';
+import { Moon } from '../Icon/Moon';
+import { useTheme } from '../../hooks/useTheme';
+import { THEMES } from '../../types/theme';
 
 const ThemeToggleButton = () => {
   const { theme, toggleTheme, isInitialized } = useTheme();

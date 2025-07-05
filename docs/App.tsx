@@ -3,7 +3,7 @@ import TheHeader from './components/TheHeader';
 import TheSidebar from './components/TheSidebar';
 import TheMain from './components/TheMain';
 import TheFooter from './components/TheFooter';
-import ThemeToggleButton from './components/ThemeToggleButton';
+import ThemeToggleButton from './components/ui/ThemeToggleButton';
 
 function App() {
   return (
