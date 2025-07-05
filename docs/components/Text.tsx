@@ -58,22 +58,25 @@ const Text = () => {
       <h4 className="content-sub-heading">Description List</h4>
       <Playground>
         <dl>
-          <dt>Beast of Bodmin</dt>
-          <dd>A large feline inhabiting Bodmin Moor.</dd>
+          <dt>HTML</dt>
+          <dd>A markup language for creating web pages and web applications.</dd>
 
-          <dt>Morgawr</dt>
-          <dd>A sea serpent.</dd>
+          <dt>CSS</dt>
+          <dd>A stylesheet language for styling and laying out web pages.</dd>
 
-          <dt>Owlman</dt>
-          <dd>A giant owl-like creature.</dd>
+          <dt>JavaScript</dt>
+          <dd>A programming language for web interactivity and dynamic content.</dd>
+
+          <dt>API</dt>
+          <dd>Application Programming Interface - a set of protocols for building software applications.</dd>
         </dl>
       </Playground>
 
       <h4 className="content-sub-heading">Horizontal Rule</h4>
       <Playground>
-        <p>This is the first paragraph of text.</p>
+        <p>This section covers the basics of web development.</p>
         <hr />
-        <p>This is the second paragraph of text.</p>
+        <p>Next, we'll explore advanced topics and best practices.</p>
       </Playground>
     </div>
   );

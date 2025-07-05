@@ -32,6 +32,14 @@ const Inline = () => {
           <abbr title="HyperText Markup Language">HTML</abbr>.
         </div>
         <div className="playground__item">
+          Modern web development often uses <abbr title="Application Programming Interface">API</abbr>s and{' '}
+          <abbr title="Single Page Application">SPA</abbr> frameworks.
+        </div>
+        <div className="playground__item">
+          <abbr title="Search Engine Optimization">SEO</abbr> and <abbr title="User Experience">UX</abbr> are crucial
+          for web success.
+        </div>
+        <div className="playground__item">
           <samp>Terminal not found, Press F1 to continue</samp>
         </div>
         <div className="playground__item">

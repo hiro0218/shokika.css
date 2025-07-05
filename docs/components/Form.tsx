@@ -54,6 +54,72 @@ const Form = () => {
             </div>
           </div>
         </PlaygroundItem>
+        <PlaygroundItem>
+          <div className="content-list">
+            <div className="content-list__item">
+              <input type="submit" defaultValue="Input Submit" />
+            </div>
+            <div className="content-list__item">
+              <input type="submit" defaultValue="Input Submit Disabled" disabled />
+            </div>
+          </div>
+        </PlaygroundItem>
+        <PlaygroundItem>
+          <div className="content-list">
+            <div className="content-list__item">
+              <input type="reset" defaultValue="Input Reset" />
+            </div>
+            <div className="content-list__item">
+              <input type="reset" defaultValue="Input Reset Disabled" disabled />
+            </div>
+          </div>
+        </PlaygroundItem>
+        <PlaygroundItem>
+          <div className="content-list">
+            <div className="content-list__item">
+              <input type="image" src="/sample.jpg" alt="Image Button" width="100" height="40" />
+            </div>
+            <div className="content-list__item">
+              <input type="image" src="/sample.jpg" alt="Image Button Disabled" width="100" height="40" disabled />
+            </div>
+          </div>
+        </PlaygroundItem>
+        <PlaygroundItem>
+          <div className="content-list">
+            <div className="content-list__item">
+              <span
+                role="button"
+                tabIndex={0}
+                style={{
+                  padding: '8px 16px',
+                  border: '1px solid #ccc',
+                  borderRadius: '4px',
+                  cursor: 'pointer',
+                  display: 'inline-block',
+                }}
+              >
+                Role Button
+              </span>
+            </div>
+            <div className="content-list__item">
+              <span
+                role="button"
+                tabIndex={-1}
+                aria-disabled="true"
+                style={{
+                  padding: '8px 16px',
+                  border: '1px solid #ccc',
+                  borderRadius: '4px',
+                  cursor: 'not-allowed',
+                  display: 'inline-block',
+                  opacity: 0.6,
+                }}
+              >
+                Role Button Disabled
+              </span>
+            </div>
+          </div>
+        </PlaygroundItem>
       </Playground>
 
       <h4 className="content-sub-heading">Input</h4>
@@ -460,6 +526,111 @@ const Form = () => {
             </div>
           </div>
         </form>
+      </Playground>
+
+      <h4 className="content-sub-heading">ARIA Attributes</h4>
+      <Playground>
+        <div className="content-list">
+          <div className="content-list__item">
+            <button aria-busy="true">Loading...</button>
+          </div>
+          <div className="content-list__item">
+            <button aria-controls="form-section" aria-expanded="false">
+              Toggle Form Section
+            </button>
+          </div>
+          <div className="content-list__item">
+            <button aria-disabled="true">Aria Disabled Button</button>
+          </div>
+          <div className="content-list__item">
+            <div role="button" tabIndex={0} aria-label="Custom button with role">
+              Custom Role Button
+            </div>
+          </div>
+        </div>
+      </Playground>
+
+      <h4 className="content-sub-heading">Form Groups and Layouts</h4>
+      <Playground>
+        <div className="content-list">
+          <div className="content-list__item">
+            <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+              <label htmlFor="inline-input">Name:</label>
+              <input type="text" id="inline-input" style={{ flex: 1 }} />
+              <button type="button">Submit</button>
+            </div>
+          </div>
+          <div className="content-list__item">
+            <div style={{ display: 'grid', gap: '8px' }}>
+              <label htmlFor="grid-input">Address:</label>
+              <input type="text" id="grid-input" placeholder="Street address" />
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+                <input type="text" placeholder="City" />
+                <input type="text" placeholder="ZIP" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </Playground>
+
+      <h4 className="content-sub-heading">Form with Labels</h4>
+      <Playground>
+        <form>
+          <div className="content-list">
+            <div className="content-list__item">
+              <label htmlFor="username">Username:</label>
+              <input type="text" id="username" name="username" required />
+            </div>
+            <div className="content-list__item">
+              <label htmlFor="user-email">Email:</label>
+              <input type="email" id="user-email" name="email" required />
+            </div>
+            <div className="content-list__item">
+              <label htmlFor="user-age">Age:</label>
+              <input type="number" id="user-age" name="age" min="18" max="120" />
+            </div>
+            <div className="content-list__item">
+              <label htmlFor="bio">Bio:</label>
+              <textarea id="bio" name="bio" placeholder="Tell us about yourself"></textarea>
+            </div>
+            <div className="content-list__item">
+              <label htmlFor="country">Country:</label>
+              <select id="country" name="country">
+                <option value="">Select a country</option>
+                <option value="jp">Japan</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+              </select>
+            </div>
+            <div className="content-list__item">
+              <button type="submit">Submit Form</button>
+            </div>
+          </div>
+        </form>
+      </Playground>
+
+      <h4 className="content-sub-heading">Interactive Form Elements</h4>
+      <Playground>
+        <div className="content-list">
+          <div className="content-list__item">
+            <label>
+              <input type="checkbox" />
+              <span> I agree to the terms and conditions</span>
+            </label>
+          </div>
+          <div className="content-list__item">
+            <label>
+              <input type="checkbox" defaultChecked />
+              <span> Subscribe to newsletter</span>
+            </label>
+          </div>
+          <div className="content-list__item">
+            <label>
+              <input type="checkbox" disabled />
+              <span> This option is disabled</span>
+            </label>
+          </div>
+        </div>
       </Playground>
     </div>
   );
