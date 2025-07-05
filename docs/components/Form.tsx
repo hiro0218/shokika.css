@@ -200,19 +200,19 @@ const Form = () => {
           <div className="content-list__item">
             <label>
               <input type="checkbox" />
-              <span> One fuji</span>
+              <span> Web Design</span>
             </label>
           </div>
           <div className="content-list__item">
             <label>
               <input type="checkbox" defaultChecked />
-              <span> Two eagles</span>
+              <span> Frontend</span>
             </label>
           </div>
           <div className="content-list__item">
             <label>
               <input type="checkbox" disabled />
-              <span> Three eggplants</span>
+              <span> Backend</span>
             </label>
           </div>
         </div>
@@ -224,19 +224,19 @@ const Form = () => {
           <div className="content-list__item">
             <label>
               <input type="radio" name="radio-1" defaultChecked />
-              <span> One fuji</span>
+              <span> HTML</span>
             </label>
           </div>
           <div className="content-list__item">
             <label>
               <input type="radio" name="radio-1" />
-              <span> Two eagles</span>
+              <span> CSS</span>
             </label>
           </div>
           <div className="content-list__item">
             <label>
               <input type="radio" name="radio-1" disabled />
-              <span> Three eggplants</span>
+              <span> JavaScript</span>
             </label>
           </div>
         </div>
@@ -260,16 +260,16 @@ const Form = () => {
           <div className="content-list">
             <div className="content-list__item">
               <select aria-label="select sample">
-                <option>One fuji</option>
-                <option>Two eagles</option>
-                <option>Three eggplants</option>
+                <option>React</option>
+                <option>Vue</option>
+                <option>Angular</option>
               </select>
             </div>
             <div className="content-list__item">
               <select aria-label="select sample" disabled>
-                <option>One fuji</option>
-                <option>Two eagles</option>
-                <option>Three eggplants</option>
+                <option>React</option>
+                <option>Vue</option>
+                <option>Angular</option>
               </select>
             </div>
           </div>
@@ -279,16 +279,16 @@ const Form = () => {
           <div className="content-list">
             <div className="content-list__item">
               <select aria-label="select sample" multiple>
-                <option>One fuji</option>
-                <option>Two eagles</option>
-                <option>Three eggplants</option>
+                <option>TypeScript</option>
+                <option>JavaScript</option>
+                <option>CoffeeScript</option>
               </select>
             </div>
             <div className="content-list__item">
               <select aria-label="select sample" multiple disabled>
-                <option>One fuji</option>
-                <option>Two eagles</option>
-                <option>Three eggplants</option>
+                <option>TypeScript</option>
+                <option>JavaScript</option>
+                <option>CoffeeScript</option>
               </select>
             </div>
           </div>
@@ -298,29 +298,29 @@ const Form = () => {
           <div className="content-list">
             <div className="content-list__item">
               <select aria-label="select sample">
-                <optgroup label="1st group">
-                  <option>One fuji</option>
-                  <option>Two eagles</option>
-                  <option>Three eggplants</option>
+                <optgroup label="Frontend">
+                  <option>HTML</option>
+                  <option>CSS</option>
+                  <option>JavaScript</option>
                 </optgroup>
-                <optgroup label="2nd group">
-                  <option>One fuji</option>
-                  <option>Two eagles</option>
-                  <option>Three eggplants</option>
+                <optgroup label="Backend">
+                  <option>Node.js</option>
+                  <option>Python</option>
+                  <option>Ruby</option>
                 </optgroup>
               </select>
             </div>
             <div className="content-list__item">
               <select aria-label="select sample" disabled>
-                <optgroup label="1st group">
-                  <option>One fuji</option>
-                  <option>Two eagles</option>
-                  <option>Three eggplants</option>
+                <optgroup label="Frontend">
+                  <option>HTML</option>
+                  <option>CSS</option>
+                  <option>JavaScript</option>
                 </optgroup>
-                <optgroup label="2nd group">
-                  <option>One fuji</option>
-                  <option>Two eagles</option>
-                  <option>Three eggplants</option>
+                <optgroup label="Backend">
+                  <option>Node.js</option>
+                  <option>Python</option>
+                  <option>Ruby</option>
                 </optgroup>
               </select>
             </div>
@@ -331,29 +331,29 @@ const Form = () => {
           <div className="content-list">
             <div className="content-list__item">
               <select aria-label="select sample" multiple>
-                <optgroup label="1st group">
-                  <option>One fuji</option>
-                  <option>Two eagles</option>
-                  <option>Three eggplants</option>
+                <optgroup label="Languages">
+                  <option>HTML</option>
+                  <option>CSS</option>
+                  <option>JavaScript</option>
                 </optgroup>
-                <optgroup label="2nd group">
-                  <option>One fuji</option>
-                  <option>Two eagles</option>
-                  <option>Three eggplants</option>
+                <optgroup label="Frameworks">
+                  <option>React</option>
+                  <option>Vue</option>
+                  <option>Angular</option>
                 </optgroup>
               </select>
             </div>
             <div className="content-list__item">
               <select aria-label="select sample" aria-disabled="true" multiple disabled>
-                <optgroup label="1st group">
-                  <option>One fuji</option>
-                  <option>Two eagles</option>
-                  <option>Three eggplants</option>
+                <optgroup label="Frontend">
+                  <option>HTML</option>
+                  <option>CSS</option>
+                  <option>JavaScript</option>
                 </optgroup>
-                <optgroup label="2nd group">
-                  <option>One fuji</option>
-                  <option>Two eagles</option>
-                  <option>Three eggplants</option>
+                <optgroup label="Backend">
+                  <option>Node.js</option>
+                  <option>Python</option>
+                  <option>Ruby</option>
                 </optgroup>
               </select>
             </div>
@@ -364,24 +364,24 @@ const Form = () => {
       <h4 className="content-sub-heading">Fieldset and Legend</h4>
       <Playground>
         <fieldset>
-          <legend>Choose your favorite monster</legend>
+          <legend>Choose your preferred development environment</legend>
           <div className="content-list">
             <div className="content-list__item">
               <label>
                 <input type="radio" name="monster" defaultChecked />
-                <span> Kraken</span>
+                <span> VS Code</span>
               </label>
             </div>
             <div className="content-list__item">
               <label>
                 <input type="radio" name="monster" />
-                <span> Sasquatch</span>
+                <span> WebStorm</span>
               </label>
             </div>
             <div className="content-list__item">
               <label>
                 <input type="radio" name="monster" />
-                <span> Mothman</span>
+                <span> Sublime Text</span>
               </label>
             </div>
           </div>
@@ -392,14 +392,14 @@ const Form = () => {
       <Playground>
         <div className="content-list">
           <div className="content-list__item">
-            <label htmlFor="ice-cream-choice">Choose a flavor:</label>
-            <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
-            <datalist id="ice-cream-flavors">
-              <option value="Chocolate" />
-              <option value="Coconut" />
-              <option value="Mint" />
-              <option value="Strawberry" />
-              <option value="Vanilla" />
+            <label htmlFor="framework-choice">Choose a framework:</label>
+            <input list="framework-options" id="framework-choice" name="framework-choice" />
+            <datalist id="framework-options">
+              <option value="React" />
+              <option value="Vue" />
+              <option value="Angular" />
+              <option value="Svelte" />
+              <option value="Next.js" />
             </datalist>
           </div>
         </div>
