@@ -588,38 +588,36 @@ const Form = () => {
 
       <h4 className="content-sub-heading">Form with Labels</h4>
       <Playground>
-        <form>
-          <div className="content-list">
-            <div className="content-list__item">
-              <label htmlFor="username">Username:</label>
-              <input type="text" id="username" name="username" required />
-            </div>
-            <div className="content-list__item">
-              <label htmlFor="user-email">Email:</label>
-              <input type="email" id="user-email" name="email" required />
-            </div>
-            <div className="content-list__item">
-              <label htmlFor="user-age">Age:</label>
-              <input type="number" id="user-age" name="age" min="18" max="120" />
-            </div>
-            <div className="content-list__item">
-              <label htmlFor="bio">Bio:</label>
-              <textarea id="bio" name="bio" placeholder="Tell us about yourself"></textarea>
-            </div>
-            <div className="content-list__item">
-              <label htmlFor="country">Country:</label>
-              <select id="country" name="country">
-                <option value="">Select a country</option>
-                <option value="jp">Japan</option>
-                <option value="us">United States</option>
-                <option value="uk">United Kingdom</option>
-              </select>
-            </div>
-            <div className="content-list__item">
-              <button type="submit">Submit Form</button>
-            </div>
+        <div className="content-list" style={{ flexDirection: 'column' }}>
+          <div className="content-list__item">
+            <label htmlFor="username">Username:</label>
+            <input type="text" id="username" name="username" required />
           </div>
-        </form>
+          <div className="content-list__item">
+            <label htmlFor="user-email">Email:</label>
+            <input type="email" id="user-email" name="email" required />
+          </div>
+          <div className="content-list__item">
+            <label htmlFor="user-age">Age:</label>
+            <input type="number" id="user-age" name="age" min="18" max="120" />
+          </div>
+          <div className="content-list__item">
+            <label htmlFor="bio">Bio:</label>
+            <textarea id="bio" name="bio" placeholder="Tell us about yourself"></textarea>
+          </div>
+          <div className="content-list__item">
+            <label htmlFor="country">Country:</label>
+            <select id="country" name="country">
+              <option value="">Select a country</option>
+              <option value="jp">Japan</option>
+              <option value="us">United States</option>
+              <option value="uk">United Kingdom</option>
+            </select>
+          </div>
+          <div className="content-list__item">
+            <button type="submit">Submit Form</button>
+          </div>
+        </div>
       </Playground>
     </div>
   );
