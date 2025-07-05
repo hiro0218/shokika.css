@@ -326,7 +326,12 @@ html[data-theme='dark'] .playground {
   padding: var(--space-xl) 0;
   border-top: 1px solid var(--color-divider);
   color: var(--color-text-secondary);
+  font-size: var(--font-size-down-1);
   text-align: center;
+}
+
+.footer p {
+  margin: 0;
 }
 
 .theme-toggle-button:hover {

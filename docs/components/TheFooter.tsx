@@ -1,10 +1,11 @@
 const TheFooter = () => {
+  const version = import.meta.env.VITE_APP_VERSION;
+
   return (
     <footer className="footer">
-      created by&nbsp;
-      <a href="https://github.com/hiro0218" target="_blank" rel="noreferrer">
-        hiro
-      </a>
+      <p>
+        &copy; hiro. Released under the MIT License. v{version}
+      </p>
     </footer>
   );
 };
