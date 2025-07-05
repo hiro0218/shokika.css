@@ -1,4 +1,5 @@
 import Heading from './ui/Heading';
+import { Playground, PlaygroundItem } from './ui/Playground';
 
 const Form = () => {
   return (
@@ -6,8 +7,8 @@ const Form = () => {
       <Heading title="Form" id="form" level={3} />
 
       <h4 className="content-sub-heading">Button</h4>
-      <div className="playground">
-        <div className="playground__item">
+      <Playground>
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <button type="button">Button</button>
@@ -18,8 +19,8 @@ const Form = () => {
               </button>
             </div>
           </div>
-        </div>
-        <div className="playground__item">
+        </PlaygroundItem>
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <button type="submit">Submit</button>
@@ -30,8 +31,8 @@ const Form = () => {
               </button>
             </div>
           </div>
-        </div>
-        <div className="playground__item">
+        </PlaygroundItem>
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <button type="reset">Reset</button>
@@ -42,8 +43,8 @@ const Form = () => {
               </button>
             </div>
           </div>
-        </div>
-        <div className="playground__item">
+        </PlaygroundItem>
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <input type="button" defaultValue="Input Button" />
@@ -52,12 +53,12 @@ const Form = () => {
               <input type="button" defaultValue="Input Button Disabled" disabled />
             </div>
           </div>
-        </div>
-      </div>
+        </PlaygroundItem>
+      </Playground>
 
       <h4 className="content-sub-heading">Input</h4>
-      <div className="playground">
-        <div className="playground__item">
+      <Playground>
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <input type="text" placeholder="Text" />
@@ -69,8 +70,8 @@ const Form = () => {
               <input type="text" defaultValue="Readonly" placeholder="Readonly" readOnly />
             </div>
           </div>
-        </div>
-        <div className="playground__item">
+        </PlaygroundItem>
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <input type="password" placeholder="Password" />
@@ -79,8 +80,8 @@ const Form = () => {
               <input type="password" placeholder="Disabled" disabled />
             </div>
           </div>
-        </div>
-        <div className="playground__item">
+        </PlaygroundItem>
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <input type="search" placeholder="Search" />
@@ -89,8 +90,8 @@ const Form = () => {
               <input type="search" placeholder="Disabled" disabled />
             </div>
           </div>
-        </div>
-        <div className="playground__item">
+        </PlaygroundItem>
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <input type="number" placeholder="Number" />
@@ -99,8 +100,8 @@ const Form = () => {
               <input type="number" placeholder="Number" disabled />
             </div>
           </div>
-        </div>
-        <div className="playground__item">
+        </PlaygroundItem>
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <input type="email" placeholder="Email" />
@@ -109,8 +110,8 @@ const Form = () => {
               <input type="email" placeholder="Email" disabled />
             </div>
           </div>
-        </div>
-        <div className="playground__item">
+        </PlaygroundItem>
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <input type="url" placeholder="URL" />
@@ -119,8 +120,8 @@ const Form = () => {
               <input type="url" placeholder="URL" disabled />
             </div>
           </div>
-        </div>
-        <div className="playground__item">
+        </PlaygroundItem>
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <input type="tel" placeholder="Tel" />
@@ -129,9 +130,9 @@ const Form = () => {
               <input type="tel" placeholder="Tel" disabled />
             </div>
           </div>
-        </div>
+        </PlaygroundItem>
 
-        <div className="playground__item">
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <input type="datetime-local" placeholder="Datetime Local" defaultValue="2021-01-01T10:10:00" />
@@ -140,8 +141,8 @@ const Form = () => {
               <input type="datetime-local" placeholder="Datetime Local" defaultValue="2021-01-01T10:10:00" disabled />
             </div>
           </div>
-        </div>
-        <div className="playground__item">
+        </PlaygroundItem>
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <input type="date" placeholder="Date" defaultValue="2021-01-01" />
@@ -150,8 +151,8 @@ const Form = () => {
               <input type="date" placeholder="Date" defaultValue="2021-01-01" disabled />
             </div>
           </div>
-        </div>
-        <div className="playground__item">
+        </PlaygroundItem>
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <input type="time" placeholder="Time" defaultValue="10:10:00" />
@@ -160,8 +161,8 @@ const Form = () => {
               <input type="time" placeholder="Time" defaultValue="10:10:00" disabled />
             </div>
           </div>
-        </div>
-        <div className="playground__item">
+        </PlaygroundItem>
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <input type="file" aria-label="input type[file] sample" />
@@ -170,8 +171,8 @@ const Form = () => {
               <input type="file" aria-label="input type[file] sample" disabled />
             </div>
           </div>
-        </div>
-        <div className="playground__item">
+        </PlaygroundItem>
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <input type="color" aria-label="input type[color] sample" />
@@ -180,8 +181,8 @@ const Form = () => {
               <input type="color" aria-label="input type[color] sample" disabled />
             </div>
           </div>
-        </div>
-        <div className="playground__item">
+        </PlaygroundItem>
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <input type="range" aria-label="input type[range] sample" />
@@ -190,11 +191,11 @@ const Form = () => {
               <input type="range" aria-label="input type[range] sample" disabled />
             </div>
           </div>
-        </div>
-      </div>
+        </PlaygroundItem>
+      </Playground>
 
       <h4 className="content-sub-heading">Checkbox</h4>
-      <div className="playground">
+      <Playground>
         <div className="content-list">
           <div className="content-list__item">
             <label>
@@ -215,10 +216,10 @@ const Form = () => {
             </label>
           </div>
         </div>
-      </div>
+      </Playground>
 
       <h4 className="content-sub-heading">Radio</h4>
-      <div className="playground">
+      <Playground>
         <div className="content-list">
           <div className="content-list__item">
             <label>
@@ -239,10 +240,10 @@ const Form = () => {
             </label>
           </div>
         </div>
-      </div>
+      </Playground>
 
       <h4 className="content-sub-heading">Textarea</h4>
-      <div className="playground">
+      <Playground>
         <div className="content-list">
           <div className="content-list__item">
             <textarea placeholder="Textarea"></textarea>
@@ -251,11 +252,11 @@ const Form = () => {
             <textarea placeholder="Textarea" disabled></textarea>
           </div>
         </div>
-      </div>
+      </Playground>
 
       <h4 className="content-sub-heading">Select</h4>
-      <div className="playground">
-        <div className="playground__item">
+      <Playground>
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <select aria-label="select sample">
@@ -272,9 +273,9 @@ const Form = () => {
               </select>
             </div>
           </div>
-        </div>
+        </PlaygroundItem>
 
-        <div className="playground__item">
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <select aria-label="select sample" multiple>
@@ -291,9 +292,9 @@ const Form = () => {
               </select>
             </div>
           </div>
-        </div>
+        </PlaygroundItem>
 
-        <div className="playground__item">
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <select aria-label="select sample">
@@ -324,9 +325,9 @@ const Form = () => {
               </select>
             </div>
           </div>
-        </div>
+        </PlaygroundItem>
 
-        <div className="playground__item">
+        <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
               <select aria-label="select sample" multiple>
@@ -357,11 +358,11 @@ const Form = () => {
               </select>
             </div>
           </div>
-        </div>
-      </div>
+        </PlaygroundItem>
+      </Playground>
 
       <h4 className="content-sub-heading">Fieldset and Legend</h4>
-      <div className="playground">
+      <Playground>
         <fieldset>
           <legend>Choose your favorite monster</legend>
           <div className="content-list">
@@ -385,10 +386,10 @@ const Form = () => {
             </div>
           </div>
         </fieldset>
-      </div>
+      </Playground>
 
       <h4 className="content-sub-heading">Datalist</h4>
-      <div className="playground">
+      <Playground>
         <div className="content-list">
           <div className="content-list__item">
             <label htmlFor="ice-cream-choice">Choose a flavor:</label>
@@ -402,10 +403,10 @@ const Form = () => {
             </datalist>
           </div>
         </div>
-      </div>
+      </Playground>
 
       <h4 className="content-sub-heading">Progress</h4>
-      <div className="playground">
+      <Playground>
         <div className="content-list">
           <div className="content-list__item">
             <label htmlFor="file">File progress:</label>
@@ -414,10 +415,10 @@ const Form = () => {
             </progress>
           </div>
         </div>
-      </div>
+      </Playground>
 
       <h4 className="content-sub-heading">Meter</h4>
-      <div className="playground">
+      <Playground>
         <div className="content-list">
           <div className="content-list__item">
             <label htmlFor="fuel">Fuel level:</label>
@@ -426,10 +427,10 @@ const Form = () => {
             </meter>
           </div>
         </div>
-      </div>
+      </Playground>
 
       <h4 className="content-sub-heading">Output</h4>
-      <div className="playground">
+      <Playground>
         <form
           onInput={(e) => {
             const target = e.target as HTMLInputElement;
@@ -459,7 +460,7 @@ const Form = () => {
             </div>
           </div>
         </form>
-      </div>
+      </Playground>
     </div>
   );
 };

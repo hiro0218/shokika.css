@@ -1,10 +1,11 @@
 import Heading from './ui/Heading';
+import { Playground } from './ui/Playground';
 
 const Inline = () => {
   return (
     <div className="content-wrapper">
       <Heading title="Inline" id="inline" level={3} />
-      <div className="playground">
+      <Playground>
         <div className="playground__item">
           This is <a href="#">Anchor Link</a>.
         </div>
@@ -41,7 +42,7 @@ const Inline = () => {
         <div className="playground__item">
           Run <code>npm install --save-dev shokika.css</code> to install.
         </div>
-      </div>
+      </Playground>
     </div>
   );
 };

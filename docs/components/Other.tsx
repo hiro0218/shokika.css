@@ -1,4 +1,5 @@
 import Heading from './ui/Heading';
+import { Playground } from './ui/Playground';
 
 const Other = () => {
   return (
@@ -6,7 +7,7 @@ const Other = () => {
       <Heading title="Other Elements" id="other" level={3} />
 
       <h4 className="content-sub-heading">Table</h4>
-      <div className="playground">
+      <Playground>
         <table>
           <thead>
             <tr>
@@ -20,15 +21,15 @@ const Other = () => {
             </tr>
           </tbody>
         </table>
-      </div>
+      </Playground>
 
       <h4 className="content-sub-heading">Details</h4>
-      <div className="playground">
+      <Playground>
         <details>
           <summary>Summary</summary>
           <p>Paragraph</p>
         </details>
-      </div>
+      </Playground>
     </div>
   );
 };
