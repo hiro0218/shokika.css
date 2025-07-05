@@ -8,7 +8,17 @@ interface HeadingProps {
 
 const Heading: React.FC<HeadingProps> = ({ title, id, level = 3 }) => {
   const Tag: React.ElementType = `h${level}`;
-  const className = level === 2 ? 'section-heading' : 'content-heading';
+  let className = '';
+  switch (level) {
+    case 2:
+      className = 'section-heading';
+      break;
+    case 3:
+      className = 'content-heading';
+      break;
+    default:
+      className = '';
+  }
 
   return (
     <Tag className={className} id={id}>
