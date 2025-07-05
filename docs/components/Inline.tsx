@@ -3,7 +3,7 @@ import Heading from './ui/Heading';
 const Inline = () => {
   return (
     <div className="content-wrapper">
-      <Heading title="Inline" />
+      <Heading title="Inline" id="inline" />
       <div className="playground">
         <div className="playground__item">
           This is <a href="#">Anchor Link</a>.

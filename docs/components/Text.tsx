@@ -3,7 +3,7 @@ import Heading from './ui/Heading';
 const Text = () => {
   return (
     <div className="content-wrapper">
-      <Heading title="Text" />
+      <Heading title="Text" id="text" />
 
       <h4 className="content-sub-heading">Headings</h4>
       <div className="playground">
