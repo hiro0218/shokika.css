@@ -422,7 +422,7 @@ const Form = () => {
         <div className="content-list">
           <div className="content-list__item">
             <label htmlFor="fuel">Fuel level:</label>
-            <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">
+            <meter id="fuel" min="0" max="100" low={33} high={66} optimum={80} value="50">
               at 50/100
             </meter>
           </div>
