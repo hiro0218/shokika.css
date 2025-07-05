@@ -64,6 +64,20 @@ const Other = () => {
           </ul>
         </details>
       </Playground>
+
+      <h4 className="content-sub-heading">Iframe</h4>
+      <Playground>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7479757770916!2d139.74285797578673!3d35.658580472594515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1751703790915!5m2!1sja!2sjp"
+          width="600"
+          height="450"
+          allowFullScreen={false}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        >
+          Iframe content would appear here
+        </iframe>
+      </Playground>
     </div>
   );
 };

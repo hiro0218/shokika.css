@@ -77,10 +77,23 @@ const Form = () => {
         <PlaygroundItem>
           <div className="content-list">
             <div className="content-list__item">
-              <input type="image" src="/sample.jpg" alt="Image Button" width="100" height="40" />
+              <input
+                type="image"
+                src="https://avatars.githubusercontent.com/u/3617124?s=40&v=4"
+                alt="Image Button"
+                width="40"
+                height="40"
+              />
             </div>
             <div className="content-list__item">
-              <input type="image" src="/sample.jpg" alt="Image Button Disabled" width="100" height="40" disabled />
+              <input
+                type="image"
+                src="https://avatars.githubusercontent.com/u/3617124?s=40&v=4"
+                alt="Image Button Disabled"
+                width="40"
+                height="40"
+                disabled
+              />
             </div>
           </div>
         </PlaygroundItem>
@@ -607,30 +620,6 @@ const Form = () => {
             </div>
           </div>
         </form>
-      </Playground>
-
-      <h4 className="content-sub-heading">Interactive Form Elements</h4>
-      <Playground>
-        <div className="content-list">
-          <div className="content-list__item">
-            <label>
-              <input type="checkbox" />
-              <span> I agree to the terms and conditions</span>
-            </label>
-          </div>
-          <div className="content-list__item">
-            <label>
-              <input type="checkbox" defaultChecked />
-              <span> Subscribe to newsletter</span>
-            </label>
-          </div>
-          <div className="content-list__item">
-            <label>
-              <input type="checkbox" disabled />
-              <span> This option is disabled</span>
-            </label>
-          </div>
-        </div>
       </Playground>
     </div>
   );

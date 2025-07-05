@@ -10,14 +10,6 @@ const Image = () => {
       <Playground>
         <img src="sample.jpg" width="320" height="320" alt="Tokyo Tower" loading="lazy" />
       </Playground>
-
-      <h4 className="content-sub-heading">figure + figcaption</h4>
-      <Playground>
-        <figure>
-          <img src="sample.jpg" width="320" height="320" alt="Tokyo Tower" loading="lazy" />
-          <figcaption>Tokyo Tower</figcaption>
-        </figure>
-      </Playground>
     </div>
   );
 };
