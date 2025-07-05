@@ -23,22 +23,22 @@ const TheSidebar = () => {
     <aside className="sidebar" aria-label="Documentation navigation">
       <nav>
         <div className="sidebar__nav-group">
-          <h2 className="sidebar__nav-heading">Getting Started</h2>
+          <h2 className="sidebar__nav-heading">Installation</h2>
           <ul className="sidebar__nav-list" role="list">
             <li role="listitem">
-              <a href="#installation" onClick={handleNavClick} aria-describedby="installation-desc">
-                Installation
+              <a href="#npm" onClick={handleNavClick} aria-describedby="npm-desc">
+                npm
               </a>
             </li>
             <li role="listitem">
-              <a href="#example" onClick={handleNavClick} aria-describedby="example-desc">
-                Example
+              <a href="#cdn" onClick={handleNavClick} aria-describedby="cdn-desc">
+                cdn
               </a>
             </li>
           </ul>
         </div>
         <div className="sidebar__nav-group">
-          <h2 className="sidebar__nav-heading">Elements</h2>
+          <h2 className="sidebar__nav-heading">Example</h2>
           <ul className="sidebar__nav-list" role="list">
             <li role="listitem">
               <a href="#text" onClick={handleNavClick}>
