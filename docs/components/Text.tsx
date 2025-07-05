@@ -1,7 +1,9 @@
+import Heading from './ui/Heading';
+
 const Text = () => {
   return (
     <div className="content-wrapper">
-      <h3 className="content-heading">Text</h3>
+      <Heading title="Text" />
 
       <h4 className="content-sub-heading">Headings</h4>
       <div className="playground">

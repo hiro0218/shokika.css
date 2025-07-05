@@ -1,7 +1,9 @@
+import Heading from './ui/Heading';
+
 const Image = () => {
   return (
     <div className="content-wrapper">
-      <h3 className="content-heading">Image</h3>
+      <Heading title="Image" />
 
       <h4 className="content-sub-heading">Basic</h4>
       <div className="playground">

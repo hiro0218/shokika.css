@@ -1,7 +1,9 @@
+import Heading from './ui/Heading';
+
 const Form = () => {
   return (
     <div className="content-wrapper">
-      <h3 className="content-heading">Form</h3>
+      <Heading title="Form" />
 
       <h4 className="content-sub-heading">Button</h4>
       <div className="playground">
