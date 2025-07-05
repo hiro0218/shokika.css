@@ -213,7 +213,6 @@ body {
   }
 }
 
-/* Content */
 .section-container {
   margin-top: var(--space-3xl);
 }
@@ -310,6 +309,12 @@ html[data-theme='dark'] .playground {
 }
 
 .theme-toggle-button svg {
+  width: 24px;
+  height: 24px;
+  color: var(--color-text-primary);
+}
+
+.header__nav a svg {
   width: 24px;
   height: 24px;
   color: var(--color-text-primary);
