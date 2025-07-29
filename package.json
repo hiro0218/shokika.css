@@ -66,7 +66,7 @@
     "rimraf": "^6.0.1",
     "stylelint": "^16.21.0",
     "stylelint-config-property-sort-order-smacss": "^10.0.0",
-    "stylelint-config-recommended": "^16.0.0",
+    "stylelint-config-recommended": "^17.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.35.1",
