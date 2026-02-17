@@ -5,7 +5,7 @@ interface FormProps {
   id?: string;
 }
 
-const Form = ({ id }: FormProps) => {
+function Form({ id }: FormProps) {
   return (
     <div className="content-wrapper" id={id}>
       <Heading title="Form" level={3} />
@@ -625,6 +625,6 @@ const Form = ({ id }: FormProps) => {
       </Playground>
     </div>
   );
-};
+}
 
 export default Form;

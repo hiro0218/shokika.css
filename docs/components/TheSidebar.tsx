@@ -1,4 +1,4 @@
-const TheSidebar = () => {
+function TheSidebar() {
   return (
     <aside className="sidebar" aria-label="Documentation navigation">
       <nav>
@@ -36,6 +36,6 @@ const TheSidebar = () => {
       </nav>
     </aside>
   );
-};
+}
 
 export default TheSidebar;

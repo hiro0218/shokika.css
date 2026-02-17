@@ -5,7 +5,7 @@ interface InlineProps {
   id?: string;
 }
 
-const Inline = ({ id }: InlineProps) => {
+function Inline({ id }: InlineProps) {
   return (
     <div className="content-wrapper" id={id}>
       <Heading title="Inline" level={3} />
@@ -55,6 +55,6 @@ const Inline = ({ id }: InlineProps) => {
       </Playground>
     </div>
   );
-};
+}
 
 export default Inline;

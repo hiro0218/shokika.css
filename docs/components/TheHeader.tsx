@@ -1,6 +1,6 @@
 import { GitHub } from './Icon/GitHub';
 
-const TheHeader = () => {
+function TheHeader() {
   return (
     <header className="header">
       <h1 className="header__logo">
@@ -18,6 +18,6 @@ const TheHeader = () => {
       </nav>
     </header>
   );
-};
+}
 
 export default TheHeader;

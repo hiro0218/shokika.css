@@ -5,7 +5,7 @@ interface TextProps {
   id?: string;
 }
 
-const Text = ({ id }: TextProps) => {
+function Text({ id }: TextProps) {
   return (
     <div className="content-wrapper" id={id}>
       <Heading title="Text" level={3} />
@@ -84,6 +84,6 @@ const Text = ({ id }: TextProps) => {
       </Playground>
     </div>
   );
-};
+}
 
 export default Text;

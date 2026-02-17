@@ -5,7 +5,7 @@ interface ImageProps {
   id?: string;
 }
 
-const Image = ({ id }: ImageProps) => {
+function Image({ id }: ImageProps) {
   return (
     <div className="content-wrapper" id={id}>
       <Heading title="Image" level={3} />
@@ -16,6 +16,6 @@ const Image = ({ id }: ImageProps) => {
       </Playground>
     </div>
   );
-};
+}
 
 export default Image;

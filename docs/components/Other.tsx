@@ -5,7 +5,7 @@ interface OtherProps {
   id?: string;
 }
 
-const Other = ({ id }: OtherProps) => {
+function Other({ id }: OtherProps) {
   return (
     <div className="content-wrapper" id={id}>
       <Heading title="Other Elements" level={3} />
@@ -85,6 +85,6 @@ const Other = ({ id }: OtherProps) => {
       </Playground>
     </div>
   );
-};
+}
 
 export default Other;

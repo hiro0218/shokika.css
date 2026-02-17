@@ -5,7 +5,7 @@ import Image from './Image';
 import Other from './Other';
 import Heading from './ui/Heading';
 
-const TheMain = () => {
+function TheMain() {
   return (
     <main className="main-content">
       <section id="installation" className="section-container">
@@ -34,6 +34,6 @@ const TheMain = () => {
       </section>
     </main>
   );
-};
+}
 
 export default TheMain;
