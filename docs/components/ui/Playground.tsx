@@ -1,17 +1,17 @@
-import React from 'react';
+import type { ReactNode } from 'react';
 
 interface PlaygroundProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
-export const Playground: React.FC<PlaygroundProps> = ({ children }) => {
+export function Playground({ children }: PlaygroundProps) {
   return <div className="playground">{children}</div>;
-};
+}
 
 interface PlaygroundItemProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
-export const PlaygroundItem: React.FC<PlaygroundItemProps> = ({ children }) => {
+export function PlaygroundItem({ children }: PlaygroundItemProps) {
   return <div className="playground__item">{children}</div>;
-};
+}
