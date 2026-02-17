@@ -1,4 +1,4 @@
-import React from 'react';
+import type { ElementType } from 'react';
 
 interface HeadingProps {
   title: string;
@@ -6,25 +6,20 @@ interface HeadingProps {
   level?: 1 | 2 | 3 | 4 | 5 | 6;
 }
 
-const Heading: React.FC<HeadingProps> = ({ title, id, level = 3 }) => {
-  const Tag: React.ElementType = `h${level}`;
-  let className = '';
-  switch (level) {
-    case 2:
-      className = 'section-heading';
-      break;
-    case 3:
-      className = 'content-heading';
-      break;
-    default:
-      className = '';
-  }
+const LEVEL_CLASS_NAME: Record<number, string> = {
+  2: 'section-heading',
+  3: 'content-heading',
+};
+
+function Heading({ title, id, level = 3 }: HeadingProps) {
+  const Tag: ElementType = `h${level}`;
+  const className = LEVEL_CLASS_NAME[level] ?? '';
 
   return (
     <Tag className={className} id={id}>
       {title}
     </Tag>
   );
-};
+}
 
 export default Heading;
