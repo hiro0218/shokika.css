@@ -74,6 +74,7 @@ const Other = () => {
           allowFullScreen={false}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          style={{ maxWidth: '100%' }}
         >
           Iframe content would appear here
         </iframe>
