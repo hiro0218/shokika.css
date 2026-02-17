@@ -13,7 +13,7 @@ module.exports = (ctx) => ({
         sourceMap: true,
         cssModules: false,
         drafts: {
-          nesting: false,
+          nesting: true,
         },
       }
     },
