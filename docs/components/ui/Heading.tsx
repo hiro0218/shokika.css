@@ -6,14 +6,14 @@ interface HeadingProps {
   level?: 1 | 2 | 3 | 4 | 5 | 6;
 }
 
-const LEVEL_CLASS_NAME: Record<number, string> = {
+const LEVEL_CLASS_NAME: Partial<Record<HeadingProps['level'] & number, string>> = {
   2: 'section-heading',
   3: 'content-heading',
 };
 
 function Heading({ title, id, level = 3 }: HeadingProps) {
   const Tag: ElementType = `h${level}`;
-  const className = LEVEL_CLASS_NAME[level] ?? '';
+  const className = LEVEL_CLASS_NAME[level] || undefined;
 
   return (
     <Tag className={className} id={id}>
