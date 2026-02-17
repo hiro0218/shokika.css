@@ -26,21 +26,11 @@ const TheMain = () => {
 
       <section id="example" className="section-container">
         <Heading title="Example" level={2} id="example" />
-        <div id="text">
-          <Text />
-        </div>
-        <div id="inline">
-          <Inline />
-        </div>
-        <div id="form">
-          <Form />
-        </div>
-        <div id="image">
-          <Image />
-        </div>
-        <div id="other">
-          <Other />
-        </div>
+        <Text id="text" />
+        <Inline id="inline" />
+        <Form id="form" />
+        <Image id="image" />
+        <Other id="other" />
       </section>
     </main>
   );
