@@ -3,10 +3,9 @@ import { Moon } from '../Icon/Moon';
 import { useTheme } from '../../hooks/useTheme';
 import { THEMES } from '../../types/theme';
 
-const ThemeToggleButton = () => {
+function ThemeToggleButton() {
   const { theme, toggleTheme, isInitialized } = useTheme();
 
-  // 初期化前は何も表示しない（hydration mismatch回避）
   if (!isInitialized) {
     return null;
   }
@@ -20,6 +19,6 @@ const ThemeToggleButton = () => {
       {theme === THEMES.LIGHT ? <Sun /> : <Moon />}
     </button>
   );
-};
+}
 
 export default ThemeToggleButton;

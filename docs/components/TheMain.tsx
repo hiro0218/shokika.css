@@ -5,7 +5,7 @@ import Image from './Image';
 import Other from './Other';
 import Heading from './ui/Heading';
 
-const TheMain = () => {
+function TheMain() {
   return (
     <main className="main-content">
       <section id="installation" className="section-container">
@@ -26,24 +26,14 @@ const TheMain = () => {
 
       <section id="example" className="section-container">
         <Heading title="Example" level={2} id="example" />
-        <div id="text">
-          <Text />
-        </div>
-        <div id="inline">
-          <Inline />
-        </div>
-        <div id="form">
-          <Form />
-        </div>
-        <div id="image">
-          <Image />
-        </div>
-        <div id="other">
-          <Other />
-        </div>
+        <Text id="text" />
+        <Inline id="inline" />
+        <Form id="form" />
+        <Image id="image" />
+        <Other id="other" />
       </section>
     </main>
   );
-};
+}
 
 export default TheMain;

@@ -9,13 +9,17 @@ function App() {
   return (
     <StrictMode>
       <div className="app">
-        <TheHeader />
-        <div className="app-layout">
-          <TheSidebar />
-          <div className="main-wrapper">
-            <TheMain />
-            <TheFooter />
+        <div className="app-container">
+          <TheHeader />
+          <div className="app-content">
+            <div className="app-layout">
+              <TheSidebar />
+              <div className="main-wrapper">
+                <TheMain />
+              </div>
+            </div>
           </div>
+          <TheFooter />
         </div>
         <ThemeToggleButton />
       </div>

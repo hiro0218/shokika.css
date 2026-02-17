@@ -1,10 +1,14 @@
 import Heading from './ui/Heading';
 import { Playground } from './ui/Playground';
 
-const Text = () => {
+interface TextProps {
+  id?: string;
+}
+
+function Text({ id }: TextProps) {
   return (
-    <div className="content-wrapper">
-      <Heading title="Text" id="text" level={3} />
+    <div className="content-wrapper" id={id}>
+      <Heading title="Text" level={3} />
 
       <h4 className="content-sub-heading">Headings</h4>
       <Playground>
@@ -80,6 +84,6 @@ const Text = () => {
       </Playground>
     </div>
   );
-};
+}
 
 export default Text;

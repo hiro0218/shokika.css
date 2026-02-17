@@ -1,10 +1,14 @@
 import Heading from './ui/Heading';
 import { Playground } from './ui/Playground';
 
-const Inline = () => {
+interface InlineProps {
+  id?: string;
+}
+
+function Inline({ id }: InlineProps) {
   return (
-    <div className="content-wrapper">
-      <Heading title="Inline" id="inline" level={3} />
+    <div className="content-wrapper" id={id}>
+      <Heading title="Inline" level={3} />
       <Playground>
         <div className="playground__item">
           This is <a href="#">Anchor Link</a>.
@@ -51,6 +55,6 @@ const Inline = () => {
       </Playground>
     </div>
   );
-};
+}
 
 export default Inline;

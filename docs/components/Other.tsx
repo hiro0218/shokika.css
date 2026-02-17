@@ -1,10 +1,14 @@
 import Heading from './ui/Heading';
 import { Playground } from './ui/Playground';
 
-const Other = () => {
+interface OtherProps {
+  id?: string;
+}
+
+function Other({ id }: OtherProps) {
   return (
-    <div className="content-wrapper">
-      <Heading title="Other Elements" id="other" level={3} />
+    <div className="content-wrapper" id={id}>
+      <Heading title="Other Elements" level={3} />
 
       <h4 className="content-sub-heading">Table</h4>
       <Playground>
@@ -74,12 +78,13 @@ const Other = () => {
           allowFullScreen={false}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          style={{ maxWidth: '100%' }}
         >
           Iframe content would appear here
         </iframe>
       </Playground>
     </div>
   );
-};
+}
 
 export default Other;

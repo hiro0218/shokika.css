@@ -1,10 +1,14 @@
 import Heading from './ui/Heading';
 import { Playground, PlaygroundItem } from './ui/Playground';
 
-const Form = () => {
+interface FormProps {
+  id?: string;
+}
+
+function Form({ id }: FormProps) {
   return (
-    <div className="content-wrapper">
-      <Heading title="Form" id="form" level={3} />
+    <div className="content-wrapper" id={id}>
+      <Heading title="Form" level={3} />
 
       <h4 className="content-sub-heading">Button</h4>
       <Playground>
@@ -621,6 +625,6 @@ const Form = () => {
       </Playground>
     </div>
   );
-};
+}
 
 export default Form;
