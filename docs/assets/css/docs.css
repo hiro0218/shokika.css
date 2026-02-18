@@ -33,6 +33,7 @@
   --space-3xl: 4rem;
 
   /* Radius */
+  --radius-md: 0.25rem;
   --radius-lg: 0.5rem;
   --radius-xl: 0.75rem;
 
@@ -131,6 +132,7 @@ body {
 .app-layout {
   display: flex;
   flex: 1;
+  gap: var(--space-lg);
   padding-bottom: var(--space-3xl);
 }
 
@@ -190,8 +192,6 @@ body {
 .sidebar {
   flex-shrink: 0;
   width: var(--sidebar-width);
-  padding-top: var(--space-md);
-  padding-right: var(--space-xl);
 }
 
 .sidebar > nav {
@@ -206,7 +206,7 @@ body {
 .sidebar__nav-group {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xs);
+  gap: var(--space-sm);
   margin-top: var(--space-md);
 }
 
@@ -218,7 +218,7 @@ body {
   margin: 0;
   padding: var(--space-xs) var(--space-sm);
   color: var(--color-text-muted);
-  font-size: var(--font-size-2xs);
+  font-size: var(--font-size-xs);
   font-weight: 600;
   letter-spacing: var(--tracking-wider);
   text-transform: uppercase;
@@ -235,7 +235,7 @@ body {
 
 .sidebar__nav-list a {
   display: block;
-  padding: var(--space-xs) var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
   transition: color var(--transition-duration) var(--transition-timing);
   border-radius: var(--radius-lg);
   color: var(--color-text-tertiary);
@@ -422,8 +422,6 @@ html[data-theme='dark'] .playground {
   .sidebar {
     width: 100%;
     margin-bottom: var(--space-md);
-    padding-top: 0;
-    padding-right: 0;
   }
 
   .sidebar > nav {
