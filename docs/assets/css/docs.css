@@ -265,7 +265,6 @@ body {
 .main-wrapper {
   flex: 1;
   min-width: 0;
-  padding-top: var(--space-md);
 }
 
 /* Sections */
